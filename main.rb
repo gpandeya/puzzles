@@ -17,5 +17,13 @@ module Puzzle
         temp.join(" + ")
           
     end
+    
+    def Puzzle.seq_sum(startIndex, endIndex, pickMe)
+    
+    newArray = (startIndex..endIndex).step(pickMe)
+    newArray.map{|num| num}.sum
+    
+    end
+    
         
 end
